@@ -14,7 +14,7 @@ export default function NotFound() {
                   cannot find <i>leh</i>...
                 </h1>
                 <p className="mt-1 text-base text-muted-foreground">
-                  Maybe I renamed or deleted the page <i>liao</i>. Try again{" "}
+                  Maybe I renamed or deleted the page. Try again{" "}
                   <i>lor</i>.
                 </p>
               </div>

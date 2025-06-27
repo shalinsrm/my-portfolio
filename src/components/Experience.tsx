@@ -11,7 +11,7 @@ export default function Experience() {
   return (
     <Tabs defaultValue="work">
       <TabsList className="mb-2 grid w-full grid-cols-2">
-        <TabsTrigger value="work">Work</TabsTrigger>
+        <TabsTrigger value="work">Experience</TabsTrigger>
         <TabsTrigger value="education">Education</TabsTrigger>
       </TabsList>
       <TabsContent value="work">

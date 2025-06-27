@@ -16,7 +16,7 @@ import Link from "next/link";
 import path from "path";
 
 const blogDirectory = path.join(process.cwd(), "content");
-const TED_BIRTH_YEAR = 1997;
+// const TED_BIRTH_YEAR = 1997;
 const LIMIT = 2; // max show 2
 
 export default async function Home() {
@@ -24,39 +24,37 @@ export default async function Home() {
 
   return (
     <article className="mt-8 flex flex-col gap-16 pb-16">
-      <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
+      <section className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
         <Image
           className="rounded-lg"
-          src="/ted.jpg"
-          alt="Photo of Ted"
-          width={175}
-          height={175}
+          src="/shalincropped.jpeg"
+          alt="Photo of Shalin"
+          width={200}
+          height={200}
           priority
         />
         <div className="flex max-w-[320px] flex-col sm:max-w-full">
           <h1 className="title text-balance text-4xl sm:text-5xl">
-            hi ted here. 👋
+            hi, i'm shalin 👋
           </h1>
 
           <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
-            {new Date().getFullYear() - TED_BIRTH_YEAR}
-            yo software engineer from Singapore 🇸🇬
+            avid cybersecurity enthusiast &
           </p>
 
-          <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">
-            Backend by trade, full-stack by passion. I build and self-host the
-            lot.
+          <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
+            aspiring engineer from the bay area
           </p>
 
-          <div className="mt-6 flex items-center gap-1">
+          {/* <div className="mt-6 flex items-center gap-1">
             <p className="text-balance text-sm font-semibold sm:text-base">
               For Q&A, raise a ticket with Ted Support
             </p>
             <ArrowDownRight className="hidden size-5 animate-bounce sm:block" />
             <ArrowDown className="block size-5 animate-bounce sm:hidden" />
-          </div>
+          </div> */}
 
-          <p className="mt-1 text-xs font-light">
+          {/* <p className="mt-1 text-xs font-light">
             For escalations, please find my
             <Link
               href="https://www.instagram.com/gomugomu.cat"
@@ -67,7 +65,7 @@ export default async function Home() {
               &nbsp;Ted Lead&nbsp;
             </Link>
             instead.
-          </p>
+          </p> */}
 
           <section className="mt-6 flex flex-wrap items-center gap-4">
             <Link href="/resume.pdf" target="_blank">
