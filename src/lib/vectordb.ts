@@ -6,15 +6,15 @@ const endpoint = process.env.ASTRA_DB_API_ENDPOINT || "";
 const token = process.env.ASTRA_DB_APPLICATION_TOKEN || "";
 const collection = process.env.ASTRA_DB_COLLECTION || "";
 
-const missingAstraEnv =
-  !process.env.ASTRA_DB_APPLICATION_TOKEN || !process.env.ASTRA_DB_ENDPOINT;
-
-if (missingAstraEnv) {
-  console.warn("Astra DB env vars not set. Vector search is disabled.");
-}
-
+const missingAstraEnv = !process.env.ASTRA_DB_APPLICATION_TOKEN || !process.env.ASTRA_DB_ENDPOINT;
+const missingOpenAIEnv = !process.env.OPENAI_API_KEY;
 
 export async function getVectorStore() {
+  if (missingAstraEnv || missingOpenAIEnv) {
+    console.warn("Vector DB disabled - missing env vars");
+    return null;
+  }
+  
   return AstraDBVectorStore.fromExistingIndex(
     new OpenAIEmbeddings({ model: "text-embedding-3-small" }),
     {
@@ -29,8 +29,12 @@ export async function getVectorStore() {
 }
 
 export async function getEmbeddingsCollection() {
+  if (missingAstraEnv) {
+    console.warn("Embeddings collection disabled");
+    return null;
+  }
+  
   const client = new DataAPIClient(token);
   const db = client.db(endpoint);
-
   return db.collection(collection);
 }
