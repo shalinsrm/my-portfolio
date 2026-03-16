@@ -1,6 +1,7 @@
 import { getVectorStore } from "@/lib/vectordb";
 import { UpstashRedisCache } from "@langchain/community/caches/upstash_redis";
 import { AIMessage, HumanMessage } from "@langchain/core/messages";
+import { NextResponse } from "next/server";
 import {
   ChatPromptTemplate,
   MessagesPlaceholder,
@@ -42,7 +43,14 @@ export async function POST(req: Request) {
       cache,
     });
 
-    const retriever = (await getVectorStore()).asRetriever();
+    const vectorStore = await getVectorStore();
+    if (!vectorStore) {
+      return NextResponse.json({ 
+        error: "Chat service temporarily unavailable. Use the contact form instead!" 
+      }, { status: 503 });
+    }
+    const retriever = vectorStore.asRetriever();
+
 
     // get a customised prompt based on chat history
     const chatHistory = messages
@@ -117,6 +125,6 @@ export async function POST(req: Request) {
     return new StreamingTextResponse(stream);
   } catch (error) {
     console.error(error);
-    return Response.json({ error: "Internal server error" }, { status: 500 });
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
