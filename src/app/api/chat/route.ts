@@ -104,10 +104,15 @@ export async function POST(req: Request) {
       retriever: historyAwareRetrievalChain, // get the relevant documents based on chat history
     });
 
-    retrievalChain.invoke({
-      input: latestMessage,
-      chat_history: chatHistory,
-    });
+    await retrievalChain.invoke(
+      {
+        input: latestMessage,
+        chat_history: chatHistory,
+      },
+      {
+        callbacks: [handlers],
+      }
+    );
 
     return new StreamingTextResponse(stream);
   } catch (error) {

@@ -1,6 +1,7 @@
 import data from "@/data/socials.json";
 import { socialSchema } from "@/lib/schemas";
 import Icon from "./Icon";
+import { FaSpotify } from "react-icons/fa";
 
 export default function Socials() {
   const socials = socialSchema.parse(data).socials;

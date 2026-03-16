@@ -1,6 +1,28 @@
 {
   "projects": [
     {
+      "name": "picoCTF Solver",
+      "description": "Automatically scrapes picoCTF challenges, sends them to Claude for analysis, downloads/processes files, and prints flags.",
+      "image": "/picoctf-solver.jpg",
+      "tags": [
+        "Python",
+        "Anthropic API",
+        "Claude Opus",
+        "httpx",
+        "picoCTF",
+        "CTF",
+        "Automation",
+        "Cybersecurity"
+      ],
+      "links": [
+        {
+          "name": "GitHub",
+          "href": "https://github.com/shalinsrm/picoctf-solver",
+          "icon": "github"
+        }
+      ]
+    },
+    {
       "name": "VolunteerLink",
       "description": "A platform where youth can discover volunteer opportunities and organizations can share their service projects.",
       "image": "/volunteerlink.png",

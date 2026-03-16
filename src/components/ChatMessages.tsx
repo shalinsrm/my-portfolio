@@ -34,18 +34,6 @@ export default function ChatMessages({
         ))}
       </ul>
 
-      {/* empty */}
-      {!error && messages.length === 0 && (
-        <div className="flex h-full flex-col items-center justify-center mt-16 gap-2">
-          <Bot />
-          <p className="font-medium">Send a message to start the chat!</p>
-          <p className="text-center text-xs text-muted-foreground">
-            You can ask my assistant anything about me and it will help to find the
-            relevant information!
-          </p>
-        </div>
-      )}
-
       {/* loading */}
       {isLoading && isLastMessageUser && (
         <div className="flex items-center justify-center">

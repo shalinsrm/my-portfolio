@@ -1,6 +1,29 @@
 {
   "career": [
     {
+      "name": "US Cyber Pipeline",
+      "href": "https://www.uscybergames.com/",
+      "title": "Athlete",
+      "logo": "/uscygames.jpeg",
+      "start": "June 2025",
+      "description": [
+        "Selected among only 60 elite recruits nationwide for the US Cyber Pipeline program, a prestigious talent development initiative for future U.S. Cyber Team members.",
+        "Completed intensive advanced training in digital forensics, reverse engineering, web exploitation, and cryptography alongside top national high school and collegiate competitors.",
+        "Developed elite-level cybersecurity skills and strengthened high-performance team collaboration in a competitive environment designed to identify America's next generation of cyber defenders."
+      ]
+    },
+    {
+      "name": "Foothill Cybersecurity Club",
+      "href": "www.linkedin.com/company/foothill-cybersecurity-club/",
+      "title": "President",
+      "logo": "/foothillcybersecurity.png",
+      "start": "February 2025",
+      "description": [
+        "Created interactive cybersecurity activities and delivered technical presentations at weekly meetings to engage and educate club members.",
+        "Encouraged member participation in CTF competitions by promoting upcoming events, guiding sign-ups, and fostering a collaborative, competitive environment."
+      ]
+    },
+    {
       "name": "Foothill DECA",
       "href": "http://www.foothilldeca.com/",
       "title": "Junior Officer of Finance",
@@ -9,24 +32,6 @@
       "description": [
         "Oversaw chapter budgeting and financial planning using Google Sheets, streamlining expense tracking and reimbursements for 100+ members.",
         "Planned and executed the Chipotle fundraiser netting over $1,000 in profit, contributing directly to event funding and member subsidies."
-      ]
-    },
-    {
-      "name": "Foothill Cybersecurity Club",
-      "href": "https://www.instagram.com/foothillcybersecurity/",
-      "title": "President",
-      "logo": "/foothillcybersecurity.png",
-      "start": "February 2025",
-      "description": [
-        "Created interactive cybersecurity activities and delivered technical presentations at weekly meetings to engage and educate club members.",
-        "Encouraged member participation in CTF competitions by promoting upcoming events, guiding sign-ups, and fostering a collaborative, competitive environment."
-      ],
-      "_comment": [
-        {
-          "name": "NFTVue",
-          "href": "https://nftvue.vercel.app",
-          "icon": "globe"
-        }
       ]
     }
   ]

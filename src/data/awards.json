@@ -1,0 +1,53 @@
+{
+  "awards": [
+    {
+      "title": "PicoCTF 2026",
+      "tag": "Cybersecurity",
+      "category": "Cybersecurity",
+      "year": "2026",
+      "description": "Placed 35th out of 8777 teams worldwide, 14th out of 1351 US teams"
+    },
+    {
+      "title": "Quick Serve Restaurant Management 10th Place",
+      "tag": "DECA",
+      "category": "DECA",
+      "year": "2026",
+      "description": "Placed 10th out of 84 competitors at State CDC in California"
+    },
+    {
+      "title": "USACO Gold",
+      "tag": "Other",
+      "category": "Other",
+      "year": "2026",
+      "description": "Earned USACO Gold, showcasing strong algorithmic programming skills in Java through advanced problem-solving and data structures."
+    },
+    {
+      "title": "Eagle Scout",
+      "tag": "Other",
+      "category": "Other",
+      "year": "2026",
+      "description": "Earned my Eagle Scout, building two composting systems for Hearst Elementary School :)"
+    },
+    {
+      "title": "Quick Serve Restaurant Management 3rd Place",
+      "tag": "DECA",
+      "category": "DECA",
+      "year": "2026",
+      "description": "Placed 3rd out of 18 competitors at NorCal CDC in California"
+    },
+    {
+      "title": "ITF Taekwondo Black Belt",
+      "tag": "Other",
+      "category": "Other",
+      "year": "2025",
+      "description": "Earned black belt after years of intensive training and perseverance, demonstrating discipline and resilience."
+    },
+    {
+      "title": "PicoCTF 2025",
+      "tag": "Cybersecurity",
+      "category": "Cybersecurity",
+      "year": "2025",
+      "description": "Placed 28th out of 1817 teams nationally, 218th out of 10460 total teams"
+    }
+  ]
+}

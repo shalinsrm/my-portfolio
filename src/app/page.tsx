@@ -1,4 +1,5 @@
 import Experience from "@/components/Experience";
+import Awards from "@/components/Awards";
 import LinkWithIcon from "@/components/LinkWithIcon";
 import Posts from "@/components/Posts";
 import Projects from "@/components/Projects";
@@ -35,11 +36,11 @@ export default async function Home() {
         />
         <div className="flex max-w-[320px] flex-col sm:max-w-full">
           <h1 className="title text-balance text-4xl sm:text-5xl">
-            hi, i'm shalin 👋
+            Hey! I'm Shalin 👋
           </h1>
 
           <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
-            avid cybersecurity enthusiast &
+            I'm an avid cybersecurity enthusiast &
           </p>
 
           <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">
@@ -80,7 +81,9 @@ export default async function Home() {
       </section>
 
       <Experience />
-
+      
+      <Awards />
+      
       <section className="flex flex-col gap-8">
         <div className="flex justify-between">
           <h2 className="title text-2xl sm:text-3xl">featured projects</h2>
