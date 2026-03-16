@@ -6,9 +6,13 @@ const endpoint = process.env.ASTRA_DB_API_ENDPOINT || "";
 const token = process.env.ASTRA_DB_APPLICATION_TOKEN || "";
 const collection = process.env.ASTRA_DB_COLLECTION || "";
 
-if (!endpoint || !token || !collection) {
-  throw new Error("Please set environmental variables for Astra DB!");
+const missingAstraEnv =
+  !process.env.ASTRA_DB_APPLICATION_TOKEN || !process.env.ASTRA_DB_ENDPOINT;
+
+if (missingAstraEnv) {
+  console.warn("Astra DB env vars not set. Vector search is disabled.");
 }
+
 
 export async function getVectorStore() {
   return AstraDBVectorStore.fromExistingIndex(
