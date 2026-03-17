@@ -33,6 +33,28 @@
         "Oversaw chapter budgeting and financial planning using Google Sheets, streamlining expense tracking and reimbursements for 100+ members.",
         "Planned and executed the Chipotle fundraiser netting over $1,000 in profit, contributing directly to event funding and member subsidies."
       ]
+    },
+    {
+      "name": "Pleasanton Community of Character Collaborative",
+      "href": "http://communityofcharacter.org",
+      "title": "Software Engineering Intern", 
+      "logo": "/pleasanton-internship.jpeg",
+      "start": "May 2025",
+      "description": [
+        "Built custom WIX Content Management System site with SEO optimization, UI improvements, and Google Analytics integration.",
+        "Enhanced user experience and performance tracking for community engagement platform."
+      ]
+    },
+    {
+      "name": "World AI Forum (WAIFO)",
+      "href": "https://waifo.org",
+      "title": "Software Engineering Intern",
+      "logo": "/waifo-internship.jpg", 
+      "start": "May 2025",
+      "description": [
+        "Developed responsive webpages using HTML/CSS/JS within Content Management System, improving performance and SEO rankings.",
+        "Implemented Google reCAPTCHA and resolved backend vulnerabilities, reducing spam submissions significantly."
+      ]
     }
   ]
 }
