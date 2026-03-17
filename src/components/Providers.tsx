@@ -14,10 +14,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
       defaultTheme="system"
       disableTransitionOnChange
     >
-      <ChatProvider>
         {children}
-        <Chat />
-      </ChatProvider>
       <ToastProvider />
     </ThemeProvider>
   );
