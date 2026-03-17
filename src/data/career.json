@@ -39,7 +39,8 @@
       "href": "http://communityofcharacter.org",
       "title": "Software Engineering Intern", 
       "logo": "/pleasanton-internship.jpeg",
-      "start": "May 2025",
+      "start": "October 2025",
+      "end": "February 2026",
       "description": [
         "Built custom WIX Content Management System site with SEO optimization, UI improvements, and Google Analytics integration.",
         "Enhanced user experience and performance tracking for community engagement platform."
@@ -50,7 +51,8 @@
       "href": "https://waifo.org",
       "title": "Software Engineering Intern",
       "logo": "/waifo-internship.jpg", 
-      "start": "May 2025",
+      "start": "June 2025",
+      "end": "August 2025",
       "description": [
         "Developed responsive webpages using HTML/CSS/JS within Content Management System, improving performance and SEO rankings.",
         "Implemented Google reCAPTCHA and resolved backend vulnerabilities, reducing spam submissions significantly."
